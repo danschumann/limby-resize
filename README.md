@@ -89,3 +89,26 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
 * Gif support only for image magick at the moment
 
 canvas will just take the first frame, similar to using `[0]` with image magick
+
+
+### Browser support
+
+`lib/canvas_resize.js` should be able to be included on the frontend for better resizing client side.  
+
+    
+    var img, canvas, resized;
+    img = new Image;
+    img.onload = function(){
+      canvas = document.createElement('canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      canvas.getContext('2d').drawImage(img, 0, 0, img.width, img.height);
+      resized = document.createElement('canvas');
+      resized.width = 300;
+      resized.height = 500;
+      // see lib/canvas_resize for window.canvasResize = function(){...}
+      canvasResize(canvas, resized);
+      // resized will now be a properly resized version of canvas
+    }
+    
+    img.src = '/path/to/img.jpg';
