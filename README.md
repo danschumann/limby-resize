@@ -51,6 +51,7 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
 
 ### Canvas
 
+```javascript
     var resizer = require('limby-resize')({
       canvas: require('canvas'),
     });
@@ -60,10 +61,11 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
       height: 500,
       destination: '/uploads/myimage.jpg',
     });
-    
+```    
     
 ### Image Magick
 
+```javascript
     var resizer = require('limby-resize')({
       imagemagick: require('imagemagick'),
     });
@@ -81,7 +83,7 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
       height: 500,
       destination: '/uploads/myanimation_preview.gif',
     });
-
+```
 
     
 *Note:*  Currently the algorithm supports resizing down, or resizing up to a scale of 2, if you scale up bigger than 2x, it won't look right.  I'll patch this next version.
@@ -95,7 +97,7 @@ canvas will just take the first frame, similar to using `[0]` with image magick
 
 `lib/canvas_resize.js` should be able to be included on the frontend for better resizing client side.  
 
-    
+```javascript
     var img, canvas, resized;
     img = new Image;
     img.onload = function(){
@@ -112,3 +114,4 @@ canvas will just take the first frame, similar to using `[0]` with image magick
     }
     
     img.src = '/path/to/img.jpg';
+```
