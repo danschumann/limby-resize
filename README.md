@@ -65,7 +65,7 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
 ### Image Magick
 
     var resizer = require('limby-resize')({
-      canvas: require('canvas'),
+      imagemagick: require('imagemagick'),
     });
     
     resizer.resize('/tmp/myanimation.gif', {
