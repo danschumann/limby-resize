@@ -1,3 +1,8 @@
+/* 
+ * MIT License
+ *  You may use this code as long as you retain this notice.  Use at your own risk! :)
+ *  https://github.com/danschumann/limby-resize
+ */
 (function(){
   var debug = require('debug')('limbyResizer');
 
