@@ -2,11 +2,15 @@
   "name": "limby-resize",
   "version": "0.0.1",
   "description": "Wrapper for resizing using ImageMagick OR Canvas.",
-  "main": "./index.js",
+  "main": "./limby-resize.js",
   "scripts": {},
   "repository": "https://github.com/danschumann/limby-resize",
   "author": "Dan Schumann",
   "dependencies": {
+    "debug": "^1.0.4",
+    "final-fs": "^1.6.0",
+    "underscore": "^1.6.0",
+    "when": "^3.4.2"
   },
   "license": "MIT"
 }
