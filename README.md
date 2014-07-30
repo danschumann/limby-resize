@@ -71,7 +71,7 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
     resizer.resize('/tmp/myanimation.gif', {
       width: 300,
       height: 500,
-      coalesce: true,
+      coalesce: true, // animated gif support ( if your image magick supports )
       destination: '/uploads/myanimation.gif',
     });
     
