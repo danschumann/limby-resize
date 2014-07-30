@@ -84,8 +84,8 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
 
 
     
-###  Note:  Currently the algorithm supports resizing down, or resizing up to a scale of 2, if you scale up bigger than 2x, it won't look right.  I'll patch this next version.
+*Note:*  Currently the algorithm supports resizing down, or resizing up to a scale of 2, if you scale up bigger than 2x, it won't look right.  I'll patch this next version.
 
-### Gif support only for image magick at the moment
+* Gif support only for image magick at the moment
 
 canvas will just take the first frame, similar to using `[0]` with image magick
