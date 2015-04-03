@@ -35,9 +35,10 @@ If you think about it, the sum of all the color in the original is 355 (0 + 100 
 The image algorithm implemented in `limby-resize` will produce a similar image to imagemagick, keeping all the pixel data, so the average pixel will be the same.
 
 Our algorithm would produce the following image:
-33  | 201.3
 
-(0 * .66 + 100 * .33) | (100 * .33 + 255 * .66)
+`33  | 201.3`
+
+`(0 * .66 + 100 * .33) | (100 * .33 + 255 * .66)`
 
 The total in ours is 234.3, leaving the average of 117.15, which is going to equal the first image ( if we weren't rounding to 2 decimals for this example ).
 
