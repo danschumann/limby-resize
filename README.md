@@ -20,7 +20,7 @@ lets say we have 3 pixels being resized into 2 pixels.
 
 normally, each pixel will have 4 numbers: red, green, blue, alpha.  Lets just look at a simplified version where pixels are just 1 number.
 
-Lets say the original image is:
+Lets say the original image is (these represent 3 different pixels, separated by |):
 0  |  100  | 255
 
 The regular canvas drawImage resize will result in either 
