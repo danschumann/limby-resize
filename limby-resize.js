@@ -4,6 +4,7 @@
  *  https://github.com/danschumann/limby-resize
  */
 (function(){
+  var _     = require('underscore');
   var debug = require('debug')('limbyResizer');
 
   var LimbyResizer;

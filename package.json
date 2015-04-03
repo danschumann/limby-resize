@@ -1,6 +1,6 @@
 {
   "name": "limby-resize",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Wrapper for resizing using ImageMagick OR Canvas.",
   "main": "./limby-resize.js",
   "scripts": {},
