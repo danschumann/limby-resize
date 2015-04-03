@@ -116,8 +116,9 @@ http://jsbin.com/jocapawere/2/edit?html,js,output
       resized.width = 300;
       resized.height = 500;
       // see lib/canvas_resize for window.canvasResize = function(){...}
-      canvasResize(canvas, resized);
-      // resized will now be a properly resized version of canvas
+      canvasResize(canvas, resized, function(){
+        // resized will now be a properly resized version of canvas
+      });
     }
     
     img.src = '/path/to/img.jpg';
