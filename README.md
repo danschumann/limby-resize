@@ -99,8 +99,8 @@ canvas will just take the first frame, similar to using `[0]` with image magick
 ### Browser support
 
 _DEMO_
-http://jsbin.com/jocapawere/2/
-http://jsbin.com/jocapawere/2/edit?html,js,output
+http://jsbin.com/palota/1/
+http://jsbin.com/palota/1/edit?html,js,output
 
 ![How it looks](https://cloud.githubusercontent.com/assets/1516973/6985039/73b5fb4e-d9f4-11e4-921b-6fc873fa0b45.png)
 
