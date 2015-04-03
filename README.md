@@ -98,6 +98,10 @@ canvas will just take the first frame, similar to using `[0]` with image magick
 
 ### Browser support
 
+_DEMO_
+http://jsbin.com/jocapawere/2/
+http://jsbin.com/jocapawere/2/edit?html,js,output
+
 `lib/canvas_resize.js` should be able to be included on the frontend for better resizing client side.  
 
 ```javascript
