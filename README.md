@@ -20,12 +20,14 @@ lets say we have 3 pixels being resized into 2 pixels.
 
 normally, each pixel will have 4 numbers: red, green, blue, alpha.  Lets just look at a simplified version where pixels are just 1 number.
 
-Lets say the original image is:
-0  |  100  | 255
+Lets say the original image is (these represent 3 different pixels, separated by |):
 
-The regular canvas drawImage resize will result in either 
-0 | 100   or
-0 | 255
+`0  |  100  | 255`
+
+The regular canvas drawImage resize will grab nearest neighbor and produce
+
+`0 | 100`   or
+`0 | 255`
 
 This sometimes is fine, but it loses details and it can be a very ugly and jagged image.
 If you think about it, the sum of all the color in the original is 355 (0 + 100 + 255), leaving the average pixel 118.33.  The resized average pixel would be 50 or 127.5, which could look okay or very different!
@@ -33,9 +35,10 @@ If you think about it, the sum of all the color in the original is 355 (0 + 100 
 The image algorithm implemented in `limby-resize` will produce a similar image to imagemagick, keeping all the pixel data, so the average pixel will be the same.
 
 Our algorithm would produce the following image:
-33  | 201.3
 
-(0 * .66 + 100 * .33) | (100 * .33 + 255 * .66)
+`33  | 201.3`
+
+`(0 * .66 + 100 * .33) | (100 * .33 + 255 * .66)`
 
 The total in ours is 234.3, leaving the average of 117.15, which is going to equal the first image ( if we weren't rounding to 2 decimals for this example ).
 
