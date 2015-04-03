@@ -102,6 +102,8 @@ _DEMO_
 http://jsbin.com/jocapawere/2/
 http://jsbin.com/jocapawere/2/edit?html,js,output
 
+![How it looks](https://cloud.githubusercontent.com/assets/1516973/6985039/73b5fb4e-d9f4-11e4-921b-6fc873fa0b45.png)
+
 `lib/canvas_resize.js` should be able to be included on the frontend for better resizing client side.  
 
 ```javascript
