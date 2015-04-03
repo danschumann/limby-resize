@@ -86,7 +86,7 @@ Overall, this library wraps both `imagemagic` and `canvas` so you can switch out
 ```
 
     
-*Note:*  Currently the algorithm supports resizing down, or resizing up to a scale of 2, if you scale up bigger than 2x, it won't look right.  I'll patch this next version.
+*Note:*  If you scale up ( make a bigger image ), it will bypass the algorithm and use default `drawImage`
 
 * Gif support only for image magick at the moment
 
