@@ -9,7 +9,7 @@ limby-resize
 Wrapper for both.
 
 
-####Better resizing with `canvas`
+#### Better resizing with `canvas`
 
 Normally, resizing with `canvas` produces some not so great images.  This module implements it's own resizing algorithm.
 
